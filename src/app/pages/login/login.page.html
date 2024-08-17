@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-img  id="img-icono"   src="./assets/icon/Designer(12).jpeg"></ion-img>
+    <ion-title>Inicie sesion o registrese</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-input
+  type="email"
+  fill="solid"
+  label="Email"
+  labelPlacement="floating"
+  helperText="Enter a valid email"
+  errorText="Invalid email"
+  ngModel
+  email
+></ion-input>
+
+<ion-input
+  type="password"
+  fill="solid"
+  label="Password"
+  labelPlacement="floating"
+  helperText=""
+  errorText="Invalid password"
+  ngModel
+  password
+></ion-input>
+
+<ion-button color="secondary">Iniciar Sesion</ion-button>
+<ion-button color="secondary">Registrarse</ion-button>
+  
+</ion-content>
